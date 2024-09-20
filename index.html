@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renk Tanıma</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Renkler Butonu -->
+        <button class="color-button" onclick="navigateToColors()">Renkler</button>
+        <!-- Dark Mode Butonu -->
+        <button class="dark-mode-button" onclick="toggleDarkMode()">🌙</button>
+        
+        <div class="color-animation-frame" id="color-frame">
+            <div class="animation-content"></div>
+            <!-- İmleç animasyonu öğesi -->
+            <div class="cursor-effect" id="cursor-effect"></div>
+        </div>
+        <div class="upload-frame">
+            <h2 id="animated-text">Hangi rengi öğrenmek istersin?</h2>
+            <label for="upload" class="custom-upload-button">Fotoğraf Yükle</label>
+            <input type="file" id="upload" accept="image/*">
+            <div id="upload-status">
+                <!-- Yüklenen fotoğraf burada görünecek -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
